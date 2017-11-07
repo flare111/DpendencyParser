@@ -14,18 +14,12 @@ import Util
 
 
 """
-This script defines a transition-based dependency parser which makes
-use of a classifier powered by a neural network. The neural network
-accepts distributed representation inputs: dense, continuous
-representations of words, their part of speech tags, and the labels
-which connect words in a partial dependency parse.
+
 
 This is an implementation of the method described in
 
 Danqi Chen and Christopher Manning. A Fast and Accurate Dependency Parser Using Neural Networks. In EMNLP 2014.
 
-Author: Danqi Chen, Jon Gauthier
-Modified by: Heeyoung Kwon
 """
 
 
@@ -149,7 +143,7 @@ def getFeatures(c):
     """
     =================================================================
 
-    Implement feature extraction described in
+    feature extraction described in
     "A Fast and Accurate Dependency Parser using Neural Networks"(2014)
 
     =================================================================
@@ -196,7 +190,7 @@ def genTrainExamples(sents, trees):
     """
     =======================================================
 
-    Implement the forwrad pass described in
+    the forwrad pass described in
     "A Fast and Accurate Dependency Parser using Neural Networks"(2014)
 
     =======================================================
@@ -244,12 +238,8 @@ if __name__ == '__main__':
         """
         ===================================================================
 
-        Define the computational graph with necessary variables.
-        You may need placeholders of:
-            train_inputs
-            train_labels
-            test_inputs
-
+        the computational graph with necessary variables.
+        
         Implement the loss function described in the paper
 
         ===================================================================
