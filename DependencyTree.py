@@ -4,8 +4,6 @@ import Config
 Represents a partial or complete dependency parse of a sentence, and
 provides convenience methods for analyzing the parse.
 
-Author: Danqi Chen
-Modified by: Heeyoung Kwon
 """
 
 class DependencyTree:
